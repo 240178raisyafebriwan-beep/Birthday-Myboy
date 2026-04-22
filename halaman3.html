@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist For U</title>
+    <style>
+        body {
+            background-color: #000000; /* Hitam */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            max-width: 350px;
+        }
+
+        .music-card {
+            background-color: #121212;
+            width: 100%;
+            border-radius: 20px;
+            padding: 10px;
+            border: 2px solid #ff7eb9; /* Border Pink */
+            box-shadow: 0 0 30px rgba(255, 126, 185, 0.4);
+            margin-bottom: 25px;
+            overflow: hidden;
+        }
+
+        .btn-lanjut {
+            background-color: #ff7eb9;
+            color: white;
+            text-decoration: none;
+            padding: 12px 60px;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(255, 126, 185, 0.4);
+        }
+
+        .btn-lanjut:hover {
+            background-color: #ff5da2;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="music-card">
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1yBCx8xJgXEIJ9HrNvclr0?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <a href="halaman4.html" class="btn-lanjut">Lanjut →</a>
+    </div>
+
+</body>
+</html>
